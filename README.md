@@ -1,2 +1,2 @@
-# Programming
-Studying programming
+# Data Structure
+Studying programming through data structures algorithms
