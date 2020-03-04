@@ -155,46 +155,6 @@ void insert(node *T, int value, int ok, int changed_height){
 
 int main()
 {
-    /*node A, B, C, D, E, F, G;
-    A.info = 0;
-    A.left = A.right = NULL;
-    B.info = 2;
-    B.left = B.right = NULL;
-    C.info = 4;
-    C.left = C.right = NULL;
-    D.info = 6;
-    D.left = D.right = NULL;
-    E.info = 1;
-    E.left = &A;
-    E.right = &B;
-    F.info = 5;
-    F.left = &C;
-    F.right = &D;
-    G.info = 3;
-    G.left = &E;
-    G.right = &F;
-
-    if (is_balanced(&G))
-        printf("Num primeiro momento, esta balanceada\n");
-    else printf("Nao esta balanceada\n");
-
-    node H, I;
-    H.info = 7;
-    H.left = H.right = NULL;
-    D.right = &H;
-
-    if (is_balanced(&G))
-        printf("Mesmo após a inserção de %d esta balanceada\n", H.info);
-    else printf("Nao esta mais balanceada\n");
-
-    I.info = 8;
-    H.right = &I;
-    I.left = I.right = NULL;
-
-    if (is_balanced(&G))
-        printf("Mesmo apos a insercao de %d esta balanceada\n", I.info);
-    else printf("Apos a insercao de %d, nao esta mais balanceada\n", I.info);*/
-
     node A, B, C, D, E, F, G, H, I;
     insert(&A, 0, 1, 1);
 
