@@ -15,7 +15,7 @@ int main()
     
     for (i = 0; i < size_array; i++){
         printf("Type the element: ");
-        scanf("%d", &*(array + i));
+        scanf("%d", array + i);
         product_of_all *= *(array + i);
     }
 
