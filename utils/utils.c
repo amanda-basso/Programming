@@ -27,3 +27,12 @@ void create_random_array(int *array, const int size_array){
     for (i = 0; i < size_array; i++)
         *(array + i) = rand()%100;
 }
+
+int gets_size_string(char *string){
+    int size = 0;
+
+    while (*(string + size) != '\0')
+        size++;
+
+    return size;
+}
