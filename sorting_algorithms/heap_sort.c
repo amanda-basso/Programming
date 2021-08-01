@@ -47,5 +47,7 @@ int main(int argc, char *argv[])
 
     print_array(array, atoi(argv[1]), "Sorted array");
 
+    free(array);
+
     return 0;
 }

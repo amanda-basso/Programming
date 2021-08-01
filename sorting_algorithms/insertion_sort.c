@@ -1,15 +1,17 @@
 /* This code implements insertion sort algorithm in C */
-#include<stdlib.h>
-#include"../utils/utils.h"
+#include <stdlib.h>
 
-void insertion_sort(int *array, const int size_array){
-    int i, j, key;
+#include "../utils/utils.h"
 
-    for (i = 1; i < size_array; i++){
+void insertion_sort(int *array, size_t size) {
+    size_t i, j;
+    int key;
+
+    for (i = 1; i < size; i++) {
         key = *(array + i);
         j = i - 1;
 
-        while(j >= 0 && *(array + j) > key){
+        while (j >= 0 && *(array + j) > key) {
             *(array + j + 1) = *(array + j);
             j--;
         }
@@ -24,7 +26,9 @@ int main(int argc, char *argv[])
     create_random_array(array, atoi(argv[1]));
 
     print_array(array, atoi(argv[1]), "Original array");
+
     insertion_sort(array, atoi(argv[1]));
+
     print_array(array, atoi(argv[1]), "Sorted array");
 
     free(array);

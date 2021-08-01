@@ -65,7 +65,7 @@ int gets_size_string(char *string){
     return size;
 }
 
-int partition(int *array, int low, int high){
+int qpartition(int *array, int low, int high){
     int j;
     int pivot = *(array + high);
     int i = low - 1;
@@ -80,10 +80,10 @@ int partition(int *array, int low, int high){
     return (i + 1);
 }
 
-void quick_sort(int *array, int low, int high){
+void quicksort(int *array, int low, int high){
     if (low < high){
-        int partition_index = partition(array, low, high);
-        quick_sort(array, low, partition_index - 1);
-        quick_sort(array, partition_index + 1, high);
+        int partition_index = qpartition(array, low, high);
+        quicksort(array, low, partition_index - 1);
+        quicksort(array, partition_index + 1, high);
     }
 }
